@@ -70,7 +70,7 @@ RUN mv hadoop-3.2.0 $HADOOP_HOME && \
 
 RUN ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa && \
     cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys && \
-    chmod 0600 ~/.ssh/authorized_keys
+    chmod 600 ~/.ssh/authorized_keys
 
 ADD *xml $HADOOP_HOME/etc/hadoop/
 ADD workers $HADOOP_HOME/etc/hadoop/workers
