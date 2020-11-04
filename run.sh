@@ -1,8 +1,8 @@
 #!/bin/bash
 
-docker rm $(docker stop $(docker ps -aq))
+docker rm $(docker stop -f $(docker ps -aq))
 
-docker rmi $(docker images -aq)
+docker rmi -f $(docker images -aq)
 
 echo "Y" | docker system prune
 
