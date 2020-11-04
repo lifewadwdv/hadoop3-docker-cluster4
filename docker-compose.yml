@@ -6,7 +6,7 @@ services:
     container_name: master
     privileged: true
     ports:
-      - 12345:8088
+      - 8088:8088
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup
       - /tmp/hadoop:/usr/local/hadoop

@@ -2,7 +2,7 @@
 
 docker rm $(docker stop $(docker ps -aq))
 
-docker rmi $(docker images)
+docker rmi $(docker images -aq)
 
 echo "Y" | docker system prune
 
