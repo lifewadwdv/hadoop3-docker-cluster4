@@ -82,7 +82,7 @@ RUN mkdir $HADOOP_HOME/logs
 
 RUN chmod 600 ~/.ssh/config
 
-RUN chown $USER ~/.ssh/config
+# RUN chown $USER ~/.ssh/config
 
 EXPOSE 50010 50020 50070 50075 50090 8020 9000 50070
 EXPOSE 10020 19888
